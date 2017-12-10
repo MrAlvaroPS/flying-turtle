@@ -15,12 +15,12 @@ function Canvas(id) {
   }).bind(this);
 
 
-  this.ninja = new Ninja(this.canvas, this.ctx);
+  this.turtle = new Turtle(this.canvas, "./images/turtle.png");
 
   this.fatties = [];
   this.fatties.push(new Boy(this.canvas, this.ctx));
 
-  setInterval(function (){
+  setInterval(function() {
     this.fatties.push(new Boy(this.canvas, this.ctx));
   }.bind(this), 2300);
 
@@ -28,7 +28,7 @@ function Canvas(id) {
 }
 
 Canvas.prototype.onkeydown = function(e) {
-  this.ninja.onkeydown(e);
+  this.turtle.onkeydown(e);
 };
 
 Canvas.prototype.start = function() {
@@ -47,7 +47,7 @@ Canvas.prototype.draw = function() {
   this.ctx.drawImage(this.img, this.x, this.y, this.canvas.width, this.canvas.height);
   this.x -= 3;
 
-  this.ninja.draw();
+  this.turtle.draw();
   this.fatties.forEach(function(boy) {
     boy.draw();
   });

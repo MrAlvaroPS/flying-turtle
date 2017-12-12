@@ -1,7 +1,9 @@
 
 
 p {
-  margin-left: 90%
+  position: absolute;
+  text-align: right;
+  margin-left: 60px;
 }
 
 #logo {

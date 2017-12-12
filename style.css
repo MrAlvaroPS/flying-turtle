@@ -4,12 +4,19 @@ p {
   margin-left: 90%
 }
 
+#logo {
+  text-align: left;
+  /*display: inline;*/
+  position: relative;
+  margin-left: 50px;
+}
 
 #game-board {
   text-align: center;
 }
 
 #start-button {
+  display: inline;
   background: #0c98f5;
   background-image: -webkit-linear-gradient(top, #0c98f5, #0b3d5c);
   background-image: -moz-linear-gradient(top, #0c98f5, #0b3d5c);
@@ -27,7 +34,7 @@ p {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin-left: 40%;
+  margin-left: 0%;
 }
 
 #start-button:hover {

@@ -4,6 +4,7 @@ p {
   position: absolute;
   text-align: right;
   margin-left: 60px;
+  margin-top: 0;
 }
 
 #logo {
